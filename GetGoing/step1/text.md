@@ -41,9 +41,9 @@ At this point it is customary to verify the output of the checksum by cross refe
 
 Ok now that you have verified the download integrity has not been discredited. We must move on to the next step. We are going to set our PATH variable, necessary for interfacing with our installed Go Binary.
 
-We do this by edditing the ~/.profile config. Use vim to open this file with
+We do this by edditing the ~/.profile config. Use Vi to open this file with
 ```bash
-$ sudo vi ~/.profile
+$ vi ~/.profile
 ```{{exec}}
 
 and add this to the lowest point of the document.
