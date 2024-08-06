@@ -46,13 +46,29 @@ We do this by edditing the ~/.profile config. Use Vi to open this file with
 vi ~/.profile
 ```{{exec}}
 
-and add this to the lowest point of the document.
+Copy this line
 
 ```plain
 export PATH=$PATH:/usr/local/go/bin
 ```
 
-To exit Vi  
+Now Jump to the bottom line of the .profile with 
+
+```plain
+Shift + g
+```
+
+Press
+
+```plain
+i for input
+```
+
+and paste the line in
+
+<br>
+
+To write the change and exit Vi  
 ```plain
 esc > :wq
 ```
@@ -68,7 +84,7 @@ Now we are at the point where everything should be working correctly. We can ver
 
 ```bash
 go version
-```
+```{{exec}}
 
 
 
