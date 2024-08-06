@@ -1,17 +1,16 @@
 {
-    "title": "Get Go-Ing",
+    "title": "Get Going",
     "description": "Lets get up and running with Go on Linux",
     "details": {
       "intro": {
-        "text": "intro.md",
-        "background": "setup.sh"
+        "text": "intro.md"
       },
       "steps": [
         {
           "title": "Installation",
           "text": "step1/text.md",
           "verify": "step1/verify.sh"
-        },
+        }
       ],
       "finish": {
         "text": "finish.md"
