@@ -51,34 +51,41 @@ Copy this line
 ```plain
 export PATH=$PATH:/usr/local/go/bin
 ```
-
-Now Jump to the bottom line of the .profile with 
+We are going to use a few Vi motions to get to the last spot.
+Jump to the bottom line of the .profile with:
 
 ```plain
 Shift + g
 ```
+Jump to the end of the last line with:
 
+```plain
+$
+```
+Enter input mode after the last character with:
+
+```plain
+a
+```
 Press
 
 ```plain
-i for input
+Enter/Return
 ```
-
-and paste the line in
+and Paste what you had copied before this Vi Hello started 🤣
 
 <br>
-
-To write the change and exit Vi  
+One last Vi step
+To write the changes and exit
 ```plain
 esc > :wq
 ```
-
 
 Now we must refresh our profile:
 
 ```bash
 source ~/.profile
-```
+```{{exec}}
 
 Now we are at the point where everything should be working correctly. We can verify this by running:
 
