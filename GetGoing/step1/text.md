@@ -43,7 +43,7 @@ Ok now that you have verified the download integrity has not been discredited. W
 
 We do this by edditing the ~/.profile config. Use Vi to open this file with
 ```bash
-$ vi ~/.profile
+vi ~/.profile
 ```{{exec}}
 
 and add this to the lowest point of the document.
@@ -61,13 +61,13 @@ esc > :wq
 Now we must refresh our profile:
 
 ```bash
-$ source ~/.profile
+source ~/.profile
 ```
 
 Now we are at the point where everything should be working correctly. We can verify this by running:
 
 ```bash
-$ go version
+go version
 ```
 
 
