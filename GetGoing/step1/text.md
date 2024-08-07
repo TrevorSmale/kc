@@ -6,7 +6,7 @@ Lets simply check if Go is intalled, Install it using the Apt Package Manager an
 
 ## Solution
 
-## Step 1: First we make sure we're in our home directory using
+### Step 1: First we make sure we're in our home directory using
 
 ```bash
 cd ~
@@ -14,7 +14,7 @@ cd ~
 
 <br>
 
-## Step 2: Printing the Directory Location
+### Step 2: Printing the Directory Location
 We can list the current directory using
 
 ```bash
@@ -23,7 +23,7 @@ pwd
 
 <br>
 
-## Step 3: Verify Go is not installed
+### Step 3: Verify Go is not installed
 We need to run a quick check on the system to verify Go is not already installed.
 
 ```bash
@@ -32,7 +32,7 @@ go env
 
 <br>
 
-## Step 4: Installing go with Apt
+### Step 4: Installing go with Apt
 
 ```bash
 apt install golang-go
@@ -40,7 +40,7 @@ apt install golang-go
 
 <br>
 
-## Step 5: Verifying Installation
+### Step 5: Verifying Installation
 We are now going to verify that Go has been installed.
 
 ```bash
