@@ -47,9 +47,9 @@ We are now going to verify that Go has been installed.
 go env
 ```{{exec}}
 
-Look at it! it lists out every little detatil. Note that your GOPATH='/root/go" and your GOROOT="/usr/local/go".
+Look at it! it lists out every little detatil. Note What version you are using and that your GOPATH='/root/go" and your GOROOT="/usr/local/go".
 
-Sometimes the version of Go is important in respect to the external package you are going to install. We will get into that later. For the time being note that we are working with GOVERSION="go1.18".
+Sometimes the version of Go is important in respect to the external package you are going to install. We will get into that later. 
 
 <br>
 
