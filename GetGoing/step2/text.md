@@ -17,9 +17,9 @@ vi hw.go
 ### Step 2: Printing the Directory Location
 We can activate input mode with 'i'
 
-```bash
+```plain
 i
-```{{exec}}
+```
 
 <br>
 
@@ -36,7 +36,7 @@ package main
 
 ```plain
 import "fmt"
-```{{exec}}
+```
 
 <br>
 
@@ -45,7 +45,7 @@ We open our function by declaring it.
 
 ```plain
 func main() {
-```{{exec}}
+```
 
 <br>
 
@@ -54,7 +54,7 @@ We will add our main function that prints Hello World
 
 ```plain
 fmt.Println("Hello World")
-```{{exec}}
+```
 
 <br>
 
@@ -63,7 +63,7 @@ We will add our main function that prints Hello World
 
 ```plain
 }
-```{{exec}}
+```
 
 <br>
 
@@ -103,7 +103,7 @@ You have written your first Go file!
 lets take it for a Run!
 
 ```bash
-go run main.go
+go run hw.go
 ```{{exec}}
 
 You should see Hello World
