@@ -1,99 +1,55 @@
 
-# Installation
-Lets Install the latest version of GO using the Linux Terminal.
+# Get-Going Lab 1: Installation
+Lets simply check if Go is intalled, Install it using the Apt Package Manager and Verify that it is working.
 
 <br>
 
-### Solution
-First we make sure we're in our home directory using
+## Solution
 
-```plain
+## Step 1: First we make sure we're in our home directory using
+
+```bash
 cd ~
 ```{{exec}}
 
+<br>
+
+## Step 2: Printing the Directory Location
 We can list the current directory using
 
-```plain
+```bash
 pwd
 ```{{exec}}
 
-Now we need to install Curl
+<br>
 
-```plain
-sudo apt-get install curl -y
+## Step 3: Verify Go is not installed
+We need to run a quick check on the system to verify Go is not already installed.
+
+```bash
+go env
 ```{{exec}}
-
-Now we utilize Curl to download go from the official repositories
-
-```plain
-curl -OL https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
-```{{exec}}
-
-We then verify the integrity of the downloaded file using a checksum
-
-```plain
-sha256sum go1.16.7.linux-amd64.tar.gz
-```{{exec}}
-
-At this point it is customary to verify the output of the checksum by cross referencing with the one posted on the download page. In the case the download page would be https://golang.org/dl/go1.16.7 
 
 <br>
 
-Ok now that you have verified the download integrity has not been discredited. We must move on to the next step. We are going to set our PATH variable, necessary for interfacing with our installed Go Binary.
+## Step 4: Installing go with Apt
 
-We do this by edditing the ~/.profile config. Use Vi to open this file with
 ```bash
-vi ~/.profile
+apt install golang-go
 ```{{exec}}
-
-Copy this line
-
-```plain
-export PATH=$PATH:/usr/local/go/bin
-```
-We are going to use a few Vi motions to get to the last spot.
-Jump to the bottom line of the .profile with:
-
-```plain
-Shift + g
-```
-Jump to the end of the last line with:
-
-```plain
-$
-```
-Enter input mode after the last character with:
-
-```plain
-a
-```
-Press
-
-```plain
-Enter/Return
-```
-and Paste what you had copied before this Vi Hello started 🤣
 
 <br>
-One last Vi step
-To write the changes and exit
-```plain
-esc > :wq
-```
 
-Now we must refresh our profile:
+## Step 5: Verifying Installation
+We are now going to verify that Go has been installed.
 
 ```bash
-source ~/.profile
+go env
 ```{{exec}}
 
-Now we are at the point where everything should be working correctly. We can verify this by running:
+Look at it! it lists out every little detatil. Note that your GOPATH='/root/go" and your GOROOT="/usr/local/go".
 
-```bash
-go version
-```{{exec}}
-
-
+Sometimes the version of Go is important in respect to the external package you are going to install. We will get into that later. For the time being note that we are working with GOVERSION="go1.18".
 
 <br>
 
