@@ -3,7 +3,8 @@
     "description": "Lets get up and running with Go on Linux",
     "details": {
       "intro": {
-        "text": "intro.md"
+        "text": "intro.md",
+        "background": "setup.sh"
       },
       "steps": [
         {
