@@ -35,7 +35,7 @@ go env
 ### Step 4: Installing go with Apt
 
 ```bash
-apt install golang-go
+apt install golang-go -y
 ```{{exec}}
 
 <br>
